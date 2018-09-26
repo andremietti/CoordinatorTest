@@ -1,5 +1,5 @@
 //
-//  CreateAccountViewController.swift
+//  ViewController.swift
 //  CoordinatorTest
 //
 //  Created by andre mietti on 26/09/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CreateAccountViewController: UIViewController, Storyboarded {
+class ViewController: UIViewController, Storyboarded {
 
     // MARK: - Properties
     weak var coordinator: MainCoordinator?
@@ -18,5 +18,14 @@ class CreateAccountViewController: UIViewController, Storyboarded {
         super.viewDidLoad()
 
     }
-    
+
+    // MARK: - Actions
+    @IBAction func buyTapped(_ sender: Any) {
+        coordinator?.buySubscription()
+    }
+
+    @IBAction func createAccountTapped(_ sender: Any) {
+        coordinator?.createAccount()
+    }
 }
+

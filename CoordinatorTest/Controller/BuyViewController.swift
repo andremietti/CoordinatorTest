@@ -1,5 +1,5 @@
 //
-//  CreateAccountViewController.swift
+//  BuyViewController.swift
 //  CoordinatorTest
 //
 //  Created by andre mietti on 26/09/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CreateAccountViewController: UIViewController, Storyboarded {
+class BuyViewController: UIViewController, Storyboarded {
 
     // MARK: - Properties
     weak var coordinator: MainCoordinator?

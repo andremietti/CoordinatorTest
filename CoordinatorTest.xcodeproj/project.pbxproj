@@ -12,6 +12,11 @@
 		0E867043215C1F910035DD7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E867041215C1F910035DD7C /* Main.storyboard */; };
 		0E867045215C1F930035DD7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E867044215C1F930035DD7C /* Assets.xcassets */; };
 		0E867048215C1F930035DD7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E867046215C1F930035DD7C /* LaunchScreen.storyboard */; };
+		0E867050215C1FAF0035DD7C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E86704F215C1FAF0035DD7C /* Coordinator.swift */; };
+		0E867052215C21EB0035DD7C /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E867051215C21EB0035DD7C /* Storyboarded.swift */; };
+		0E867054215C239E0035DD7C /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E867053215C239E0035DD7C /* MainCoordinator.swift */; };
+		0E867056215C28250035DD7C /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E867055215C28250035DD7C /* BuyViewController.swift */; };
+		0E86705C215C28A30035DD7C /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E86705B215C28A30035DD7C /* CreateAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		0E867044215C1F930035DD7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E867047215C1F930035DD7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E867049215C1F930035DD7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E86704F215C1FAF0035DD7C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		0E867051215C21EB0035DD7C /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		0E867053215C239E0035DD7C /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		0E867055215C28250035DD7C /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
+		0E86705B215C28A30035DD7C /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,51 @@
 		0E86703C215C1F910035DD7C /* CoordinatorTest */ = {
 			isa = PBXGroup;
 			children = (
-				0E86703D215C1F910035DD7C /* AppDelegate.swift */,
-				0E86703F215C1F910035DD7C /* ViewController.swift */,
-				0E867041215C1F910035DD7C /* Main.storyboard */,
-				0E867044215C1F930035DD7C /* Assets.xcassets */,
-				0E867046215C1F930035DD7C /* LaunchScreen.storyboard */,
-				0E867049215C1F930035DD7C /* Info.plist */,
+				0E86705A215C28780035DD7C /* Resources */,
+				0E867059215C28530035DD7C /* View */,
+				0E867058215C28450035DD7C /* Coordinator */,
+				0E867057215C28290035DD7C /* Controller */,
 			);
 			path = CoordinatorTest;
+			sourceTree = "<group>";
+		};
+		0E867057215C28290035DD7C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0E86703F215C1F910035DD7C /* ViewController.swift */,
+				0E867055215C28250035DD7C /* BuyViewController.swift */,
+				0E86705B215C28A30035DD7C /* CreateAccountViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0E867058215C28450035DD7C /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0E867051215C21EB0035DD7C /* Storyboarded.swift */,
+				0E86704F215C1FAF0035DD7C /* Coordinator.swift */,
+				0E867053215C239E0035DD7C /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		0E867059215C28530035DD7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E867046215C1F930035DD7C /* LaunchScreen.storyboard */,
+				0E867041215C1F910035DD7C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E86705A215C28780035DD7C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0E86703D215C1F910035DD7C /* AppDelegate.swift */,
+				0E867044215C1F930035DD7C /* Assets.xcassets */,
+				0E867049215C1F930035DD7C /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E86705C215C28A30035DD7C /* CreateAccountViewController.swift in Sources */,
 				0E867040215C1F910035DD7C /* ViewController.swift in Sources */,
 				0E86703E215C1F910035DD7C /* AppDelegate.swift in Sources */,
+				0E867050215C1FAF0035DD7C /* Coordinator.swift in Sources */,
+				0E867054215C239E0035DD7C /* MainCoordinator.swift in Sources */,
+				0E867052215C21EB0035DD7C /* Storyboarded.swift in Sources */,
+				0E867056215C28250035DD7C /* BuyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +335,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CoordinatorTest/Info.plist;
+				DEVELOPMENT_TEAM = SBCS5Z8P2R;
+				INFOPLIST_FILE = "$(SRCROOT)/CoordinatorTest/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +353,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CoordinatorTest/Info.plist;
+				DEVELOPMENT_TEAM = SBCS5Z8P2R;
+				INFOPLIST_FILE = "$(SRCROOT)/CoordinatorTest/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
